@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Create user!</h2>
+  <ion-list>
+    
+      <ion-item>
+        <ion-label>Firstname</ion-label>
+        <ion-input type="text" [(ngModel)]="firstname"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Lastname</ion-label>
+        <ion-input  type="text" [(ngModel)]="lastname"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+    
+    <div padding>
+      <button ion-button (click)="createUser(firstname,lastname)">Create</button>
+    </div>
+
+
+  <p>
+  Firstname: {{user.fname}}
+  </p>
+  <p>
+    Lastname: {{user.lname}}
+  </p>
+  <p>
+    Id: {{user.id}}
+  </p>
+
+</ion-content>
