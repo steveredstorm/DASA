@@ -7,6 +7,7 @@ export interface IUser {
     uname: string;
     email: string;
     type: UserType;
+    status: Status
 }
 
 export class User implements IUser {
@@ -16,6 +17,7 @@ export class User implements IUser {
     uname: string;
     email: string;
     type: UserType;
+    status: Status;
     sex: string;
     age: number;
     prof_img: URL;
@@ -34,4 +36,10 @@ export enum UserType {
     clubOwner = 3,
     gust = 4,
     celebrity = 5
+}
+
+export enum Status {
+    active = 0,
+    blocked = 1,
+    pending = 2
 }

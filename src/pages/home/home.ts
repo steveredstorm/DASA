@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { User } from '../../app/models/user';
-import { GUID } from '../../app/models/guid';
+import { User } from '../../routes';
+import { GUID } from '../../routes';
 
 @Component({
   selector: 'page-home',
